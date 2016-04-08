@@ -17,8 +17,7 @@ body{
 }
 
 #container{
-	width:800px;
-	margin:0 auto;
+	
 	background:#fff;
 	border-radius:14px;
 }
@@ -38,3 +37,22 @@ footer{
 	float: right;
 	width:200px;
 }
+
+
+#container,header, nav, footer{
+	width:800px;
+	margin:0 auto;
+	padding:20px ;
+
+}
+
+
+nav ul li{
+	display:inline-block;
+
+}
+
+nav ul li a{
+	padding:10px 20px;
+}
+

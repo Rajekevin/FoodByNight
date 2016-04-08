@@ -10,9 +10,21 @@
 
 
 <header>
-	<h1><a href="<?php home_url('/')?>"><?php bloginfo('name') ?></H1>
+	<h1><a href="<?php echo home_url('/')?>"><?php bloginfo('name') ?></H1>
 </header>
 
+
+<?php 
+		if ( has_nav_menu('main_menu') ) {
+		wp_nav_menu(array('theme-location' => 'main_menu') ); 
+	}
+		?>
+
+<nav>
+	<?php wp_nav_menu(array(
+	'menu'=>'primary'
+	)); ?>
+</nav>
 
 	<div id="container">
 

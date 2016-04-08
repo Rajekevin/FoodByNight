@@ -2,13 +2,15 @@
 
 <div>
 
-	<?php while(have_posts()): the_post()?>
+	<?php while(have_posts()):?>
 
 	<h2> </h2>
 	<?php the_content(); ?>
-	<?php the_content(_('Continue Reading')); ?>
 
 	<?php endwhile; ?>
+
+
+	<?php comments_template('', true);
 
 
 </div>
