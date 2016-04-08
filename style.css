@@ -8,3 +8,19 @@ body{
 	background:silver;
 	font:16px arial, sans-serif;
 }
+
+#container{
+	width:800px;
+	margin:0 auto;
+	background:#fff;
+	border-radius:14px;
+}
+
+
+footer{
+	width:800px;
+	margin:0 auto;
+	background: black;
+	color:white;
+	padding:20px;
+}
