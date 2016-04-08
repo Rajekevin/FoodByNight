@@ -1,8 +1,15 @@
-/*
-Theme Name : FoodByNight
-Version:	1.0
 
+/*
+ Theme Name:   FootByNight
+ Version: 1.0
+ Description:  Food By Night Theme
+ Author:       Rajekevin DOUREPOULLE
+ template:	   FoodByNight
+ Text Domain:  FoodByNight
+ 
 */
+
+
 
 body{
 	background:silver;
@@ -23,4 +30,11 @@ footer{
 	background: black;
 	color:white;
 	padding:20px;
+}
+
+#sidebar{
+
+	border: 1px solide red;
+	float: right;
+	width:200px;
 }
