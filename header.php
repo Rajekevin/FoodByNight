@@ -3,13 +3,17 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<title>Food By Night </title>
-		<link rel="stylesheet" href="" />
+		<title><?php bloginfo('title')?></title>
+		<link rel="stylesheet" href="<?php blogingo('stylesheet_url')?>" />
+		<?php wp_head() ?>
 	</head>
 
+
+<header>
+	<h1><a href="<?php home_url('/')?>"><?php bloginfo('name') ?></H1>
+</header>
 
 
 	<div id="container">
 
 	</div>
-	
