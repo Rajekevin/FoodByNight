@@ -121,4 +121,21 @@ class link_custom extends WP_Widget {
 		<input type ="text" id="'.$this->get_field_id('name'). '" name="'.$this->get_field_name('name')
 			.'" value="'.$instance['name'].'">';
 	}
+
+
+	/*Fonction qui fait appel au JS*/
+
+	function theme_js(){
+
+		/*Appel jQuery*/
+		wp_register_script("jquery", get_template_directory_uri().'assets/js/jquery-2.2.2.js',array());
+		wp_enqueue_script("jquery");
+
+		/*Appel bootstrap.min.Js*/
+		wp_register_script("bootstrap", get_template_directory_uri().'assets/js/bootstrap.min.js',array());
+		wp_enqueue_script("bootstrap");
+
+	}
+
+	add_action('init','theme_js');
 }
