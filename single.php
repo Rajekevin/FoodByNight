@@ -1,7 +1,7 @@
 <?php get_header() ?>
+<?php get_sidebar() ?>
 
-<div>
-
+<div id="left">
 	<?php while(have_posts()):?>
 
 	<h2> </h2>
@@ -10,7 +10,7 @@
 	<?php endwhile; ?>
 
 
-	<?php comments_template('', true);
+	<?php comments_template('', true); ?>
 
 
 </div>
@@ -18,4 +18,3 @@
 
 
 <?php get_footer() ?>
-<?php get_sidebar() ?>

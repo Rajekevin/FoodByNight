@@ -1,10 +1,11 @@
 <?php get_header() ?>
+<?php get_sidebar() ?>
 
-<div>
+<div id="left">
 
-	<?php while(have_posts()):the_post()?>
+	<?php while(have_posts()): the_post()?>
 
-	<h2> </h2>
+	<h2> <?php the_title(); ?></h2>
 	<?php the_content(); ?>
 
 	<?php endwhile; ?>
@@ -15,4 +16,3 @@
 
 
 <?php get_footer() ?>
-<?php get_sidebar() ?>
