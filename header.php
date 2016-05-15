@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-	<head>
+
+
+<header class="header">
 		<meta charset="utf-8"/>
 		<title><?php bloginfo('title')?></title>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" />
@@ -11,15 +13,35 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-	</head>
 
+  <div class="container">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b>
 
-<header>
-	<h1><a href="<?php echo home_url('/')?>"><?php bloginfo('name') ?></H1>
-
-
-<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        	<i>
+        	<a href="<?php echo home_url('/')?>"><?php bloginfo('name') ?></i></b></a> </div>
+      <!--/.navbar-header-->
+      <div id="main-nav" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav" id="mainNav">
+          <li class="active" id="firstLink"><a href="#home" class="scroll-link">Accueil</a></li>
+          <li><a href="#services" class="scroll-link">Nos Services</a></li>
+          <li><a href="#aPropos" class="scroll-link">A propos</a></li>
+          <li><a href="#menu" class="scroll-link">Nos Menus</a></li>
+          <li><a href="#team" class="scroll-link">Nos Chefs</a></li>
+          <li><a href="#contactUs" class="scroll-link">Contact</a></li>
+        </ul>
+      </div>
+      <!--/.navbar-collapse--> 
+    </nav>
+    <!--/.navbar--> 
+  </div>
+  <!--/.container--> 
 </header>
+
+
+
 
 
 <?php 

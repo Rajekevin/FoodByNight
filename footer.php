@@ -11,7 +11,7 @@
 	</section>
 
 
-<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a> 
+
 
 <?php wp_footer(); ?>
 
