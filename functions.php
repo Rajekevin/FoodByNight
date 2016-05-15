@@ -137,5 +137,5 @@ class link_custom extends WP_Widget {
 
 	}
 
-	add_action('init','theme_js');
+	//add_action('theme_init','theme_js');
 }
