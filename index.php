@@ -321,61 +321,13 @@
 
 
 
-   <?php echo do_shortcode('[contact-form-7 id="7" title="RKFORM"]'); ?>
+   <?php echo do_shortcode('[contact-form-7 id="7" title="RKFORM"]'); 
+
+  
 
 
 
-
-<section id="contactUs" class="contact-parlex">
-  <div class="parlex-back">
-    <div class="container">
-      <div class="row">
-        <div class="heading text-center"> 
-          <!-- Heading -->
-          <h2>Contact</h2>
-          <p>Une question, une demande de réservation, une candidature ? C'est par ici que ça se passe !</p>
-        </div>
-      </div>
-    <div class="row mrgn30">
-       
-    <div class="col-sm-7">
-         		
-		<form> 
-			<div class="control-group">
-				<div class="controls">
-					<input type="text" class="form-control" placeholder="Full Name" id="name"  />
-					<p class="help-block"></p>
-				</div>
-			</div> 
-
-
-			<div class="control-group">
-				<div class="controls">
-					<input type="email" class="form-control" placeholder="Email" id="email"  />
-				</div>
-			</div> 
-
-
-
-
-			<div class="control-group">
-				<div class="controls">
-					<textarea rows="10" cols="100" class="form-control" 
-					placeholder="Message" id="message" required
-					data-validation-required-message="Entrez votre message ici, mon formulaire a faim" minlength="5" 
-					data-validation-minlength-message="5 caractères minimun" 
-					maxlength="999" style="resize:none"></textarea>
-				</div>
-			</div> 
-
-			<div id="success"> </div> <!-- For success/fail messages -->
-			<button type="submit" class="btn btn-primary pull-right">Envoyer</button><br />
-		</form>
-     </div>
-
-
-
-
+   ?>
 
 
          <!--Food By Night Adress -->
@@ -402,6 +354,15 @@
             </p>
 
          </aside>
+
+
+
+
+
+
+
+
+
          <!--/Food By Night Adress -->
 
      
