@@ -336,10 +336,10 @@
        
     <div class="col-sm-7">
          		
-		<form name="sentMessage" id="contactForm"  novalidate> 
+		<form> 
 			<div class="control-group">
 				<div class="controls">
-					<input type="text" class="form-control" placeholder="Full Name" id="name" required data-validation-required-message="Entrez votre nom" />
+					<input type="text" class="form-control" placeholder="Full Name" id="name"  />
 					<p class="help-block"></p>
 				</div>
 			</div> 
@@ -347,9 +347,12 @@
 
 			<div class="control-group">
 				<div class="controls">
-					<input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Entrez votre mail" />
+					<input type="email" class="form-control" placeholder="Email" id="email"  />
 				</div>
-			</div> 	
+			</div> 
+
+
+
 
 			<div class="control-group">
 				<div class="controls">
