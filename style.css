@@ -1,4 +1,3 @@
-
 /*
  Theme Name:   FootByNight
  Version: 1.0
@@ -49,7 +48,7 @@ body {
 	
 }
 ::selection {
-	color: #fff;
+	color: black;
 	background: #8e44ad;
 }
 
@@ -124,9 +123,9 @@ padding: 8px 12px;
 
 .form-control {
 	border: none;
-	padding: 22px 4px;
 	outline: none;
 	color: #5A5A5A;
+	color:black;
 	margin: 0;
 	width: 210px;
 	max-width: 100%;
@@ -367,7 +366,7 @@ line-height: 50px;
 
 
 #contactUs .heading h2 {
-	color: #fff;
+	color: white;
 }
 
 /*HEADING*/
@@ -540,6 +539,7 @@ border: 1px solid #fff;
 /*CONTACT*/
 #contactUs {
  background:#222; 
+ color:white;
 }
 #contactUs .btn {
 	border-radius: 0px !important;
@@ -835,6 +835,7 @@ color:#a30046;
 }
 footer input.form-control{
 	padding: 18px 10px;
+	color:black;
 } 
 .area1 a{
 	margin-bottom:10px;
