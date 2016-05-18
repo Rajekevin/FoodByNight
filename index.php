@@ -321,6 +321,10 @@
 
 
 
+   <?php echo do_shortcode('[contact-form-7 id="7" title="RKFORM"]'); ?>
+
+
+
 
 <section id="contactUs" class="contact-parlex">
   <div class="parlex-back">
@@ -368,7 +372,11 @@
 			<button type="submit" class="btn btn-primary pull-right">Envoyer</button><br />
 		</form>
      </div>
-         
+
+
+
+
+
 
          <!--Food By Night Adress -->
          <aside class="col-md-5">
