@@ -312,14 +312,12 @@
 </section>
 
 
-<!--Integration de Google Map...... A venir-->
+<!-- Google Map.-->
   	<section id="map">
 
       <?php gmwd_map( 2, 2); ?>
 
-      <p class="map-error">Oups... Impossible de charger la map :(</p>
-
-   </section> 
+     </section> 
 
 
 
