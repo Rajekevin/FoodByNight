@@ -138,4 +138,21 @@ class link_custom extends WP_Widget {
 	}
 
 	//add_action('theme_init','theme_js');
+
+
+
+	/*Fonction pour créer des contenus personnalisés*/
+
+	add_action( 'init', 'create_post_type' );
+	function create_post_type() {
+	  register_post_type( 'produit',
+	    array(
+	      	'labels' => array(
+	        'name' => __( 'Produits' ),
+	        'singular_name' => __( 'Produit' )
+	      	),
+	      	'public' => true
+	    	)
+	  	);
+	  }
 }
