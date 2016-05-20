@@ -155,4 +155,7 @@ class link_custom extends WP_Widget {
 	    	)
 	  	);
 	  }
+
+
+	  register_taxonomy( 'couleur', 'produit', array( 'hierarchical' => true, 'label' => 'Couleur', 'query_var' => true, 'rewrite' => true ) )
 }
