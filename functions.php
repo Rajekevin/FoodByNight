@@ -118,6 +118,7 @@ class link_custom extends WP_Widget {
 		);
 		$this->WP_Widget('link-custom', 'Lien Personalisé', $options);
 	}
+}
 
 	function widget($args, $instance){
 		echo '<a href="'.$instance['url'].'">'.$instance['name'].'</a>';
@@ -160,22 +161,77 @@ class link_custom extends WP_Widget {
 
 
 
-	/*ShortcOD*/
+	/*ShortCode*/
 
 	function myShortCode(){
-		return "<p> Coucou ceci est mon shortcode</p>";
+		return "Coucou ceci est mon shortcode";
 	}
-	add_shortcode('short',"myShortCode");
+	// add_shortcode('short','myShortCode');
 
 
 	/*Editor Style*/
-	function editorStyle(){
+	function editorstyle(){
 		add_editor_style("editorStyle.css");
 
 	}
 
-	add_action("after_setup_theme","editorStyle");
+	//add_action('after_setup_theme','editorstyle');
+
+/*MODIF DE LEDITEUR*/
+// 	function editor_tinymce(){
+// 		$style_formats=array(			
+// 				'title'=>'.translation',
+// 				'block'=> 'blockquote',
+// 				'classes'=>'translation',
+// 				'wrapper'=> true
+// 				)
+
+// 			);
+	
+// 	$init_formats('style_formats')=json_encode($style_formats)
+// 	return $init_formats; 
+// }
+
+// 	add_filter('tiny_mce_before_init', 'editor_tinymce');
 
 
 
+function custom_post_type() {
+ 
+ 
+    $labels = array(
+        'name'                => ( 'Menu_FBN' ), // Le nom de mon menu
+        'singular_name'       => ( 'Menu Food By Night' ),
+        'all_items'           => ( 'Tous les menus' ),
+        'view_item'           => ( 'Voir le menu' ),
+        'add_new_item'        => ( 'Ajouter un menu' ),
+        'add_new'             => ( 'Ajouter' ),
+        'edit_item'           => ( 'Editer un menu' ),
+        'update_item'         => ( 'Mettre à jour' ),
+        'search_items'        => ( 'Rechercher un menu' ),
+        'not_found'           => ( 'Aucun résultat' ),
+        'not_found_in_trash'  => ( 'Aucun résultat dans la corbeille' )
+    );
+    $args = array(
+        'labels'              => $labels,
+        'supports'            => array('title', 'thumbnail' ), // Permet de définir les éléments à ajouter pour notre type de contenu.
+        'taxonomies'          => array( 'category' ),
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_admin_bar'   => true, // Pour l'ajouter dans la barre d'admin en haut dans l'onglet "Créer"
+        'menu_position'       => 2, // L'ordre d'affichage dans le menu à gauche
+        'menu_icon'           => 'dashicons-format-gallery', // Nom de l’icône
+        'can_export'          => true,
+        'has_archive'         => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'capability_type'     => 'page', // Permet de spécifier que l'utilisateur possède les mêmes droits qu'il a sur les pages
+    );
+    register_post_type( 'Menu_FBN', $args );
+ 
 }
+add_action( 'init', 'custom_post_type', 0 );
+
+
+
