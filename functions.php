@@ -215,7 +215,7 @@ function custom_post_type() {
     $args = array(
         'labels'              => $labels,
         'supports'            => array('title', 'thumbnail' ), // Permet de définir les éléments à ajouter pour notre type de contenu.
-        'taxonomies'          => array( 'category' ),
+        //'taxonomies'          => array( 'category' ),
         'public'              => true,
         'show_ui'             => true,
         'show_in_menu'        => true,
@@ -232,6 +232,21 @@ function custom_post_type() {
  
 }
 add_action( 'init', 'custom_post_type', 0 );
+
+
+// Add Custom Category
+function Menu_Category() {
+    register_taxonomy(
+        'project-cat',
+        'Menu_FBN',
+        array(
+            'label' => __( 'Catégories' ),
+            'rewrite' => array( 'slug' => 'project-cat' ),
+            'hierarchical' => true,
+        )
+    );
+}
+add_action( 'init', 'Menu_Category' );
 
 
 
