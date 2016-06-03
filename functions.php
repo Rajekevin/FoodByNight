@@ -162,10 +162,19 @@ class link_custom extends WP_Widget {
 
 	/*ShortcOD*/
 
-	function myShortCode{
+	function myShortCode(){
 		return "<p> Coucou ceci est mon shortcode</p>";
 	}
 	add_shortcode('short',"myShortCode");
+
+
+	/*Editor Style*/
+	function editorStyle(){
+		add_editor_style("editorStyle.css");
+
+	}
+
+	add_action("after_setup_theme","editorStyle");
 
 
 
