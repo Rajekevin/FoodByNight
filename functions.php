@@ -160,4 +160,13 @@ class link_custom extends WP_Widget {
 
 
 
+	/*ShortcOD*/
+
+	function myShortCode{
+		return "<p> Coucou ceci est mon shortcode</p>";
+	}
+	add_shortcode('short',"myShortCode");
+
+
+
 }
