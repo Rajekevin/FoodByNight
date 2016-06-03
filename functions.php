@@ -1,4 +1,23 @@
 <?php
+/*Fonction pour créer des contenus personnalisés*/
+
+
+
+
+
+
+
+
+	add_filter( 'pre_get_posts', 'my_get_posts' );
+	/*afficher dans l'accueil*/
+	function my_get_posts( $query ) {
+	 if ( is_home() )
+	 $query->set( 'post_type', array( 'produit' ) );
+
+	 return $query;
+	}
+
+
 
 function include_styles_scripts(){
 	wp_enqueue_style('style-name', get_stylesheet_uri() );
@@ -141,21 +160,4 @@ class link_custom extends WP_Widget {
 
 
 
-	/*Fonction pour créer des contenus personnalisés*/
-
-	add_action( 'init', 'create_post_type' );
-	function create_post_type() {
-	  register_post_type( 'produit',
-	    array(
-	      	'labels' => array(
-	        'name' => __( 'Produits' ),
-	        'singular_name' => __( 'Produit' )
-	      	),
-	      	'public' => true
-	    	)
-	  	);
-	  }
-
-
-	  register_taxonomy( 'couleur', 'produit', array( 'hierarchical' => true, 'label' => 'Couleur', 'query_var' => true, 'rewrite' => true ) )
 }

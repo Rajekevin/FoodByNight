@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<?php get_sidebar() ?>
+
 
 
 <!--Main Message -->
@@ -9,6 +9,8 @@
 		<p>
 			A dream Night for You
 		</p>
+
+    
 
 		<p><a class="btn btn-primary btn-lg" href="#" role="button" >En Savoir plus ...</a></p>
 	</div>
@@ -69,7 +71,7 @@
 	    </div>
 	      
 	    <div class="col-md-3 text-center"><i class="circle"> <img src="img/3.png" alt="" /></i>
-	        <h3>Reservatin</h3>
+	        <h3>Reservation</h3>
 	        <p></p>
 	    </div>
 	    
@@ -147,7 +149,7 @@
         				    <div class="block-text rel zmin">
 						        <a title="" href="#">David Guetta</a>
 							    <br/>
-						        <p>Un vrai saut au Paradis. C'est mon restaurant favoris !</p>
+						        <p>Une vraie ambiance dans un restaurant au coeur de Paris !</p>
 							    
 					        </div>
 							<div class="person-text rel">
@@ -321,12 +323,6 @@
 
 
 
-   <?php 
-
-   echo do_shortcode('[contact-form-7 id="17" title="essai"]');
-
-
-   ?>
 
 
 
