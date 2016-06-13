@@ -380,7 +380,7 @@
 
 
          <!--Food By Night Adress -->
-         <aside class="col-md-5">
+    <!--      <aside class="col-md-5">
 
             <h3>Contact</h3>
 
@@ -402,15 +402,15 @@
             <p>
             </p>
 
-         </aside>
+         </aside> -->
          <!--/Food By Night Adress -->
 
      
-      </div>
+<!--       </div>
     </div>
    
   </div>
-</section>
+</section> -->
 
 
 <?php get_footer() ?>
