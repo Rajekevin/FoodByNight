@@ -1,21 +1,5 @@
 <?php
-/*Fonction pour créer des contenus personnalisés*/
 
-
-
-
-
-
-
-
-	add_filter( 'pre_get_posts', 'my_get_posts' );
-	/*afficher dans l'accueil*/
-	function my_get_posts( $query ) {
-	 if ( is_home() )
-	 $query->set( 'post_type', array( 'produit' ) );
-
-	 return $query;
-	}
 
 
 
@@ -247,6 +231,8 @@ function Menu_Category() {
     );
 }
 add_action( 'init', 'Menu_Category' );
+
+
 
 
 
