@@ -324,16 +324,16 @@
 
 
 
+ <?php echo do_shortcode('[contact-form-7 id="52" title="FoodByNight"]'); ?>
 
 
-
-<section id="contactUs" class="contact-parlex">
+<!-- <section id="contactUs" class="contact-parlex">
   <div class="parlex-back">
     <div class="container">
       <div class="row">
-        <div class="heading text-center"> 
+        <div class="heading text-center">  -->
           <!-- Heading -->
-          <h2>Contact</h2>
+          <!-- <h2>Contact</h2>
           <p>Une question, une demande de réservation, une candidature ? C'est par ici que ça se passe !</p>
         </div>
       </div>
@@ -369,10 +369,10 @@
 				</div>
 			</div> 
 
-			<div id="success"> </div> <!-- For success/fail messages -->
-			<button type="submit" class="btn btn-primary pull-right">Envoyer</button><br />
+			<div id="success"> </div>  --><!-- For success/fail messages -->
+		<!-- 	<button type="submit" class="btn btn-primary pull-right">Envoyer</button><br />
 		</form>
-     </div>
+     </div> -->
 
 
 
