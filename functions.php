@@ -2,7 +2,6 @@
 
 
 
-
 function include_styles_scripts(){
 	wp_enqueue_style('style-name', get_stylesheet_uri() );
 }
@@ -231,6 +230,17 @@ function Menu_Category() {
     );
 }
 add_action( 'init', 'Menu_Category' );
+
+
+
+
+// Load Font Awesome
+add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
+function enqueue_font_awesome() {
+
+	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
+
+}
 
 
 
