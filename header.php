@@ -9,6 +9,11 @@
      <script src="assets/js/jquery-2.2.2.js"></script>
      <link href="assets/css/animate.css" rel="stylesheet" media="screen">
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" />
+
+
+      
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<?php wp_head(); ?>
 		<?php wp_enqueue_script("jquery"); ?>
 
