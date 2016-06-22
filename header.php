@@ -6,6 +6,8 @@
 <header class="header">
 		<meta charset="utf-8"/>
 		<title><?php bloginfo('title')?></title>
+     <script src="assets/js/jquery-2.2.2.js"></script>
+     <link href="assets/css/animate.css" rel="stylesheet" media="screen">
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" />
 		<?php wp_head(); ?>
 		<?php wp_enqueue_script("jquery"); ?>
@@ -24,6 +26,7 @@
         	<a href="<?php echo home_url('/')?>"><?php bloginfo('name') ?></i></b></a> </div>
       <!--/.navbar-header-->
       <div id="main-nav" class="collapse navbar-collapse">
+
         <ul class="nav navbar-nav" id="mainNav">
           <li class="active" id="firstLink"><a href="#home" class="scroll-link">Accueil</a></li>
           <li><a href="#services" class="scroll-link">Nos Services</a></li>
