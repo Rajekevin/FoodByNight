@@ -211,16 +211,88 @@
         <div id="menu">
           <ul class="filters list-inline">
             <li> <a class="active" data-filter="*" href="#">Tous</a> </li>
-            <li> <a  href="#">Japonais</a> </li>
-            <li> <a  href="#">Indien</a> </li>
-            <li> <a  href="#">Traditionnel</a> </li>
+            <li> <a  href="#Japonais">Japonais</a> </li>
+            <li> <a  href="#Indien">Indien</a> </li>
+            <li> <a  href="#Trad">Traditionnel</a> </li>
           </ul>
+
+            <div id="#Japonais">
+          cc
+        </div>
           
+        </div>
+
+      
+
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-target
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-block">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  </div>
+</div>
+
+
+
+<section id="work" class="page-section page">
+  <div class="container text-center">
+    <div class="heading">
+      <h2>Dishes</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, alias enim placeat earum quos ab.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="portfolio">
+          <ul class="filters list-inline">
+            <li> <a class="active" data-filter="*" href="#">All</a> </li>
+            <li> <a data-filter=".photography" href="#">Continental</a> </li>
+            <li> <a data-filter=".branding" href="#">Chines</a> </li>
+            <li> <a data-filter=".web" href="#">Traditional</a> </li>
+          </ul>
+          <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight" style="position: relative; height: 438px;">
+            <li class="item branding" style="position: absolute; left: 0px; top: 0px;"> test
+              <div class="overlay"> <span>Etiam porta</span> </div>
+              </a> </li>
+            <li class="item photography" style="position: absolute; left: 292px; top: 0px;"> cc <img src="img/work/2.jpg" alt="">
+              <div class="overlay"> <span>Lorem ipsum</span> </div>
+              </a> </li>
+            <li class="item branding" style="position: absolute; left: 585px; top: 0px;"> <a href="images/work/3.jpg" class="fancybox"> <img src="images/work/3.jpg" alt="">
+              <div class="overlay"> <span>Vivamus quis</span> </div>
+              </a> </li>
+            <li class="item photography" style="position: absolute; left: 877px; top: 0px;"> <a href="images/work/4.jpg" class="fancybox"> <img src="images/work/4.jpg" alt="">
+              <div class="overlay"> <span>Donec ac tellus</span> </div>
+              </a> </li>
+            <li class="item photography" style="position: absolute; left: 0px; top: 219px;"> <a href="images/work/5.jpg" class="fancybox"> <img src="images/work/5.jpg" alt="">
+              <div class="overlay"> <span>Etiam volutpat</span> </div>
+              </a> </li>
+            <li class="item web" style="position: absolute; left: 292px; top: 219px;"> <a href="images/work/6.jpg" class="fancybox"> <img src="images/work/6.jpg" alt="">
+              <div class="overlay"> <span>Donec congue </span> </div>
+              </a> </li>
+            <li class="item photography" style="position: absolute; left: 585px; top: 219px;"> <a href="images/work/7.jpg" class="fancybox"> <img src="images/work/7.jpg" alt="">
+              <div class="overlay"> <span>Nullam a ullamcorper diam</span> </div>
+              </a> </li>
+            <li class="item web" style="position: absolute; left: 877px; top: 219px;"> <a href="images/work/8.jpg" class="fancybox"> <img src="images/work/8.jpg" alt="">
+              <div class="overlay"> <span>Etiam consequat</span> </div>
+              </a> </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
+
  <!-- Fin Presentation des Menus -->
 
 
