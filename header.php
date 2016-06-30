@@ -22,13 +22,14 @@
 
 
   <div class="container">
-    <nav class="navbar navbar-inverse" role="navigation">
+    <nav class="navbar   navbar-default" role="navigation">
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b>
 
-        	<i>
-        	<a href="<?php echo home_url('/')?>"><?php bloginfo('name') ?></i></b></a> </div>
+          <i>
+          <a class="navbar-brand page-scroll" href="#page-top" href="<?php echo home_url('/')?>"><?php bloginfo('name') ?></i></b></a> </div>
+      
       <!--/.navbar-header-->
       <div id="main-nav" class="collapse navbar-collapse">
 
@@ -46,7 +47,19 @@
     <!--/.navbar--> 
   </div>
   <!--/.container--> 
+
+
+  
+
+
+
+
+   
+     
+   
 </header>
+
+
 
 
 
