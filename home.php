@@ -63,31 +63,41 @@
 </section>
 
 
-<section id="services" class="page-section colord">
-  <div class="container">
-	<div class="row"> 	     
-	    <div class="col-md-3 text-center"> <i class="circle"><img src="img/1.png" alt="" /></i>
-	        <h3>#FoodByNight</h3>
-	        <p></p>
-	    </div>
-	    
-	    <div class="col-md-3 text-center"><i class="circle"> <img src="img/2.png" alt="" /></i>
-	        <h3>Thème</h3>
-	        <p></p>
-	    </div>
-	      
-	    <div class="col-md-3 text-center"><i class="circle"> <img src="img/3.png" alt="" /></i>
-	        <h3>Reservation</h3>
-	        <p></p>
-	    </div>
-	    
-	    <div class="col-md-3 text-center"><i class="circle"> <img src="img/4.png" alt="" /></i>
-	        <h3>Evenement</h3>
-	        <p></p>
-	    </div>	     
-	</div>
-  </div>
-</section>
+<section id="services">
+        <div class="container">
+           <div class="heading text-center"> 
+            <!-- Heading -->
+            <h2>Nos Services</h2>
+            <p></p>
+          </div>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Reservation</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-6">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Evenement</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <!-- <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
 
 
 
@@ -287,11 +297,14 @@
             <h4>Kevin Fabio</h4>
             <!-- Designation --> 
             <span class="pos">Chef</span>
-            <div class="team-socials"> 
-            	<a href="#"><i class="fa fa-facebook"></i></a> 
-            	<a href="#"><i class="fa fa-google-plus"></i></a> 
-            	<a href="#"><i class="fa fa-twitter"></i></a> 
-            </div>
+             <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
 
 
           </div>
@@ -305,9 +318,17 @@
               <img class="img-responsive" src="" alt=""> </div>
               <!-- Mettre une image du chef -->
             <!-- Member Details -->
-            <h4>François Oliver</h4>
+            <h4>François BOUM</h4>
             <!-- Designation --> 
             <span class="pos">Chef</span>
+             <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
             <div class="team-socials"> 
             	<a href="#"><i class="fa fa-facebook"></i></a> 
             	<a href="#"><i class="fa fa-google-plus"></i></a> 
@@ -326,6 +347,14 @@
             <h4>Douae Olsen</h4>
             <!-- Designation --> 
             <span class="pos">Chef</span>
+             <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
             <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> </div>
           </div>
         </div>
@@ -340,6 +369,14 @@
             <h4>Mohit Da cruz</h4>
             <!-- Designation --> 
             <span class="pos">Chef</span>
+             <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
             <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> </div>
           </div>
         </div>
@@ -347,6 +384,18 @@
     </div>
   </div>
   <!--/.container--> 
+
+
+
+
+
+  
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
 </section>
 
 
