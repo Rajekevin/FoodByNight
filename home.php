@@ -3,18 +3,24 @@
 
 
 <!--Main Message -->
-<div class="jumbotron">
-	<div class="container">
-		<h1>Food By Night</h1>
-		<p>
-			A dream Night for You 
-		</p>
 
-    
-
-		<p><a class="btn btn-primary btn-lg" href="#" role="button" >En Savoir plus ...</a></p>
-	</div>
-</div>
+<section id="banner">
+   <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Food By Night</div>
+                <div class="intro-heading">A dream night for you ! </div>
+                <a href="#services" class="page-scroll btn btn-xl">Let's Go</a>
+            </div>
+            <div class="bottom">
+                <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" 
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
+                viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+                    <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z">
+                    </path>
+                </svg><a href="#" class="sidef"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            </div>
+        </div>
+</section>
 
 
 <!--Page Content -->
