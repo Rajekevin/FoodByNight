@@ -4,7 +4,7 @@ get_header(); ?>
 
 	<div class="container">
 		<div class="row">
-			<div id="primary" <?php bavotasan_primary_attr(); ?>>
+			<div id="primary" >
     			<article id="post-0" class="post error404 not-found">
     				<i class="fa fa-frown-o"></i>
     		    	<header>
