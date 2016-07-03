@@ -329,10 +329,7 @@
                             <li><a href="#"><i class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
-            <div class="team-socials"> 
-            	<a href="#"><i class="fa fa-facebook"></i></a> 
-            	<a href="#"><i class="fa fa-google-plus"></i></a> 
-            </div>
+           
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-6"> 
@@ -355,7 +352,7 @@
                             <li><a href="#"><i class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
-            <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> </div>
+            
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-6"> 
@@ -377,7 +374,7 @@
                             <li><a href="#"><i class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
-            <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> </div>
+            
           </div>
         </div>
       </div>
