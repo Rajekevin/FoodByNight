@@ -29,13 +29,12 @@ add_action('wp_enqueue_scripts', 'include_styles_scripts');
 /*style*/
 function include_scripts() {
     wp_enqueue_style('bootstrap-css', get_template_directory_uri().'assets/css/bootstrap.css');
+    wp_enqueue_style('404', get_template_directory_uri().'assets/css/404.css');
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_enqueue_script('bootstrap-js', get_template_directory_uri().'assets/js/bootstrap.min.js');
     wp_enqueue_script('classie-js', get_template_directory_uri().'assets/js/classie.js');
     wp_enqueue_script('cbpAnimatedHeader', get_template_directory_uri().'assets/js/cbpAnimatedHeader.js');
-
     wp_enqueue_script('jqBootstrapValidation', get_template_directory_uri().'assets/js/jqBootstrapValidation.js');
-
      wp_enqueue_script('contact', get_template_directory_uri().'assets/js/contact_me.js');
 
 }
@@ -284,4 +283,89 @@ function my_get_posts( $query ) {
  $query->set( 'post_type', array( 'produit' ) );
 
  return $query;
+}
+
+
+//Option Theme
+
+
+
+add_action( 'admin_init', 'myThemeRegisterSettings' );
+
+function myThemeRegisterSettings( )
+{
+	register_setting( 'my_theme', 'background_color' ); // couleur de fond
+	register_setting( 'my_theme', 'text_color' );       // couleur du texte
+}
+
+// la fonction myThemeAdminMenu( ) sera exécutée
+// quand WordPress mettra en place le menu d'admin
+
+add_action( 'admin_menu', 'myThemeAdminMenu' );
+
+function myThemeAdminMenu( )
+{
+	add_menu_page(
+		'Options de mon thème', // le titre de la page
+		'Mon thème',            // le nom de la page dans le menu d'admin
+		'administrator',        // le rôle d'utilisateur requis pour voir cette page
+		'my-theme-page',        // un identifiant unique de la page
+		'myThemeSettingsPage'   // le nom d'une fonction qui affichera la page
+	);
+}
+
+function myThemeSettingsPage( )
+{
+?>
+	<div class="wrap">
+		<h2>Options de mon thème</h2>
+
+		<form method="post" action="options.php">
+			<?php
+				// cette fonction ajoute plusieurs champs cachés au formulaire
+				// pour vous faciliter le travail.
+				// elle prend en paramètre le nom du groupe d'options
+				// que nous avons défini plus haut.
+
+				settings_fields( 'my_theme' );
+			?>
+
+		
+
+			<table class="form-table">
+	<tr valign="top">
+		<th scope="row"><label for="background_color">Couleur de fond</label></th>
+		<td><input type="text" id="background_color" name="background_color" class="small-text" value="<?php echo get_option( 'background_color' ); ?>" /></td>
+	</tr>
+
+	<tr valign="top">
+		<th scope="row"><label for="text_color">Couleur du texte</label></th>
+		<td><input type="text" id="text_color" name="text_color" class="small-text" value="<?php echo get_option( 'text_color' ); ?>" /></td>
+	</tr>
+</table>
+
+			<p class="submit">
+				<input type="submit" class="button-primary" value="Mettre à jour" />
+			</p>
+		</form>
+	</div>
+<?php
+}
+
+
+// la fonction myThemeCss( ) sera exécutée à l'appel de wp_head( )
+
+add_action( 'wp_head', 'myThemeCss' );
+
+function myThemeCss( )
+{
+	// on crée un bloc style qui appliquera nos couleurs à l'élément body
+?>
+	<style type="text/css">
+		body {
+			background-color: <?php echo get_option( 'background_color', '#fff' ); ?>;
+			color: <?php echo get_option( 'text_color', '#222' ); ?>;
+		}
+	</style>
+<?php
 }
