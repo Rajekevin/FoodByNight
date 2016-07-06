@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright  &copy; FoodByNight <?=date('Y')?></span>
+                   Copyright  &copy; FoodByNight <?=date('Y')?>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -49,6 +49,3 @@ $(document).ready(function(){
 
 <?php wp_footer(); ?>
 
-</body>
-
-</html>
