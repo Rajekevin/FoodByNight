@@ -82,7 +82,11 @@
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Reservation</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">
+                    Le Restaurant Food By Night ne laisse personne indifférent et sa situation privilégiée bénéficie d’une vue panoramique parisienne sans égale pour un déjeuner sur la terrasse en surplomb des flots, ou un dîner avec vue imprenable sur la place de la Bastille au coucher du soleil.
+
+Venez déguster  une cuisine gastronomique des plus créatives signées par nos chefs  qui vous feront découvrir leurs spécialités.
+</p>
                 </div>
                 <div class="col-md-6">
                     <span class="fa-stack fa-4x">
@@ -90,7 +94,13 @@
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Evenement</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">Nous mettons tout en œuvre pour que vous vous sentiez bien chez nous et ayez envie de revenir :
+
+    Des réceptions personnalisées, avec buffet ou à la carte
+    Des propositions variées pour tous les âges
+    Un grand écran pour les manifestations sportives
+    Mise en place d'événements et de banquets réguliers
+    Groupe</p>
                 </div>
                 <!-- <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -107,61 +117,22 @@
 
 
 
-<section id="aPropos">
-  <div class="container">
-    <div class="heading text-center"> 
-      <!-- Heading -->
-      <h2>Qui Sommes-nous ?</h2>
-      <p></p>
-    </div>
-    <div class="row feature design">
-      <div class="area1 columns right">
-        <h3></h3>
-        <p></p>
-        <p></p> 
-      </div>
-      <div class="area2 columns feature-media left"> <img src="img/feature-img-1.png" alt="" width="100%"> </div>
-    </div>
 
-
-
-    <div class="row dataTxt">	
-		<div class="col-md-8 col-sm-6">
-		<h4>Nos Services</h4>
-			<p></p>
-            <p></p>
-			<p></p>
-							
-			<br>
-		</div>
-						
-		<div class="col-md-4 col-sm-6">
-							
-			<h4>Nos Menus</h4>
-			<p> </p>
-			   <ul class="listArrow">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				</ul> 
-		</div>		 
-						
-	</div>
-  </div>
 
 
   <!--Avis Client -->
 </section>
 <div class="container">
- <div class="heading text-center"> 
+ <div class="heading text-center">
+
       
       <h2>Avis de nos Clients</h2>
       <p>Découvrez l'avis de nos prestigieux clients...</p>
     </div> 
 </div>
-<div class="broun-block">
+
+ <div class="broun-block"> 
+
     <div class="container">
         <div class="row">      
                            
@@ -851,7 +822,7 @@ if($('.navbar').length > 0){
 
 
 
+<script type="text/javascript" id="cookiebanner" src="http://cookiebanner.eu/js/cookiebanner.min.js" data-position="top" data-fg="#ffffff" data-bg="#3b5269" data-link="#dddddd" data-moreinfo="http://www.cnil.fr/vos-obligations/sites-web-cookies-et-autres-traceurs/que-dit-la-loi/" data-message="Les cookies assurent le bon fonctionnement de notre site Internet. En utilisant ce dernier, vous acceptez leur utilisation." data-linkmsg="En savoir plus"</script>
 
 
-
-<?php get_footer() ?>
+<?php get_footer(); ?>
