@@ -16,6 +16,8 @@
      <link href="assets/css/animate.css" rel="stylesheet" media="screen">
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" />
 
+    <link rel="stylesheet" href="assets/css/404.css" />
+
        <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -89,14 +91,14 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">Acceuil</a>
+                        <a class="page-scroll" href="#home">Acceuil</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">Nos Services</a>
                     </li>
 
                     <li>
-                        <a class="page-scroll" href="#portfolio">Notre Carte</a>
+                        <a class="page-scroll" href="#menu">Nos Menu</a>
                     </li>
                     
                     <li>
@@ -104,11 +106,11 @@
                     </li>
 
                     <li>
-                        <a class="page-scroll" href="#about">A Propos</a>
+                        <a class="page-scroll" href="#aPropos">A Propos</a>
                     </li>
 
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contactUs">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -143,9 +145,7 @@
 	}
 		?>
 
-<nav>
-	<?php wp_nav_menu(); ?>
-</nav>
+
 
 	<div id="container">
 
