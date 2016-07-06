@@ -1484,7 +1484,7 @@ body {
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 .text-muted {
-    color: #777
+    color: #777;
 }
 .text-primary {
     color: #fed136
@@ -2299,3 +2299,9 @@ img{max-width:100%;}
 
 }
 
+
+/*service*/
+#services{
+
+	
+}
